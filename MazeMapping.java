@@ -68,7 +68,8 @@ public class MazeMapping {
             int col = field.getValue();
 
             for (Direction direction : Direction.values()) {
-                if (mazeController.getRowPos() + 2 * direction.getRowTranslation() == row && mazeController.getColPos() + 2 * direction.getColTranslation() == col) {
+                if (mazeController.getRowPos() + 2 * direction.getRowTranslation() == row && mazeController.getColPos()
+                    + 2 * direction.getColTranslation() == col) {
                     mazeController.makeMove(direction);
                     break;
                 }
